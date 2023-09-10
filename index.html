@@ -65,6 +65,18 @@
             <td>5-7 hours</td>
         </tr>
     </table>
+    <hr>
+
+    <blockquote>How do I get PHP errors to display? - <a
+            href="https://stackoverflow.com/questions/1053424/how-do-i-get-php-errors-to-display">Link to the
+            source</a></blockquote><pre>
+# display no errs to user
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
+# log to file
+php_flag log_errors on
+php_value error_log /location/to/php_error.log</pre>
 </body>
 
 </html>
